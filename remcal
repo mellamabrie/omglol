@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+import datetime
+curtime = datetime.datetime.now()
+cycle1 = curtime + datetime.timedelta(0,5400)
+cycle2 = cycle1 + datetime.timedelta(0,5400)
+cycle3 = cycle2 + datetime.timedelta(0,5400)
+cycle4 = cycle3 + datetime.timedelta(0,5400)
+cycle5 = cycle4 + datetime.timedelta(0,5400)
+cycle6 = cycle5 + datetime.timedelta(0,5400)
+c3 = str(cycle3.time())
+c4 = str(cycle4.time())
+c5 = str(cycle5.time())
+c6 = str(cycle6.time())
+print "if you go to bed right now, you could wake up at the following times."
+print c3 + "  -  3 REM cycles   -   4.5 hours of sleep"
+print c4 + "  -  4 REM cycles   -   6.0 hours of sleep"
+print c5 + "  -  5 REM cycles   -   7.5 hours of sleep"
+print c6 + "  -  6 REM cycles   -   9.0 hours of sleep"
